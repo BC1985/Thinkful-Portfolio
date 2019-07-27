@@ -80,7 +80,6 @@ nav {
 a.gitlinks:link {
   color: #7c7c7c;
   text-decoration: none;
-  position: relative;
 }
 
 a.gitlinks:before {
@@ -215,7 +214,6 @@ h2 {
   a.gitlinks:link {
     color: #2364aa;
     text-decoration: none;
-    position: relative;
   }
 
   a.gitlinks:visited {
@@ -257,9 +255,10 @@ h2 {
   /*----DON'T TOUCH------*/
 }
 
-/*----------iPad display----------*/
+/* -------- iPad --------- */
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1224px) {
+/* Portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
   main {
     margin-left: 100px;
     margin-right: 100px;
@@ -270,13 +269,15 @@ h2 {
   }
 
   .nav-name {
-    margin: 0px;
+    padding: 20px;
     font-size: 20px;
     color: gray;
     float: left;
     clear: right;
   }
-
+  .navbar {
+    padding: 0;
+  }
   .hero > h1 {
     text-align: center;
     padding: 30px;
@@ -301,8 +302,29 @@ h2 {
   .contact > ul > li {
     font-size: 20px;
   }
-  /*---DON'T TOUCH---*/
 }
+
+/* Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  .navbar-toggle {
+    display: none;
+  }
+  .main-nav {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .nav-name {
+    margin: 0px;
+    color: gray;
+    float: left;
+    clear: right;
+  }
+  .navbar {
+    padding: 10px;
+  }
+}
+
 /*------------Desktop display----------------*/
 
 @media only screen and (min-width: 1224px) {
