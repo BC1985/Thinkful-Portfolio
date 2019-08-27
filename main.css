@@ -175,8 +175,7 @@ h2 {
 }
 
 .headline > h3 {
-  text-align: center;
-  padding: 30px;
+  text-align: left;
 }
 
 /*----------------Mobile display---------------*/
