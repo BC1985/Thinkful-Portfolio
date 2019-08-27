@@ -205,6 +205,9 @@ h2 {
     display: flex;
     justify-content: flex-start;
   }
+  footer {
+    padding: 15px;
+  }
 
   /*----DON'T TOUCH------*/
 }
