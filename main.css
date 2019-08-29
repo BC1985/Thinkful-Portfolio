@@ -135,7 +135,7 @@ h2 {
   text-align: left;
 }
 
-/*----------------Mobile display---------------*/
+/*----------------Mobile display iphone 5, 6,7,8---------------*/
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 811px) {
   main {
@@ -191,6 +191,15 @@ h2 {
   @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     main {
       padding: 60px 80px;
+    }
+  }
+
+  /* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+  /* Landscape */
+  @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+    main {
+      padding: 60px 100px;
     }
   }
 
@@ -333,6 +342,18 @@ h2 {
   }
   footer {
     padding: 10px;
+  }
+}
+/* ----------- iPad Pro 12.9" ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+  .nav-name {
+    margin-left: 10px;
+    margin-block-start: 0;
+    color: gray;
+    float: left;
+    clear: right;
   }
 }
 
