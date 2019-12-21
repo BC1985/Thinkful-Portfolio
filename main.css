@@ -161,11 +161,9 @@ h2 {
   .git ul {
     margin-top: 20px;
   }
-  a.gitlinks:link {
-    color: #2364aa;
-    text-decoration: none;
+  a.gitlinks {
+    font-size: 1.5em;
   }
-
   a.gitlinks:visited {
     color: #7c7c7c;
   }
@@ -406,5 +404,8 @@ h2 {
     padding: 20px;
   }
 
+  a.gitlinks:hover {
+    text-decoration: underline;
+  }
   /*------------*/
 }
